@@ -1,0 +1,7 @@
+AuthUserFile [PATH TO .htpasswd FILE]
+AuthName "Admin area"
+AuthType Basic
+
+<Files "admin.php">
+    require valid-user
+</Files>
